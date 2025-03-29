@@ -1,0 +1,13 @@
+{
+  "name": "react-hooks",
+  "private": true,
+  "workspaces": [
+    "useStateExample",
+    "useEffectExample",
+    "useRefExample",
+    "useContextExample",
+    "useCallbackExample",
+    "useMemoExample",
+    "useReducerExample"
+  ]
+}
