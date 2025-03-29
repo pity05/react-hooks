@@ -1,19 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react'
+import DatosAPI from './hooks/useEffectEx'
+import './App.css'
 
-const App = () => {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    document.title = `Count: ${count}`;
-  }, [count]);
+function App() {
+  const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <h1>useEffect Example</h1>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-      <p>Count: {count}</p>
-    </div>
-  );
-};
+    <>
+    <DatosAPI/>
+    </>
+  )
+}
 
-export default App;
+export default App
